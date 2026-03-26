@@ -64,9 +64,10 @@ body {
     color: #00f0ff;
 }
 
-/* General Section Styles */
 section {
     padding: 60px 0;
+    scroll-margin-top: 80px;
+
 }
 
 .section-title {
