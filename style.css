@@ -482,8 +482,11 @@ body {
 
 /* Splash Slideshow/Header */
 .splash-header {
-    height: 45vh; /* Standard banner height */
-    min-height: 300px;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 7; /* Standard high-impact banner ratio */
+    max-height: 550px;
+    min-height: 320px;
     position: relative;
     overflow: hidden;
     border-bottom: 4px solid #00D4FF;
@@ -510,7 +513,7 @@ body {
     height: 100%;
     background-size: cover; /* Default cover */
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 15%; /* Focus on the top area where the branding is */
     opacity: 0;
     transition: opacity 1s ease-in-out;
 }
@@ -1120,10 +1123,11 @@ footer {
     .nav-links li:not(:last-child) { display: none; }
     .nav-links li { margin-left: 0; }
 
-    /* Slideshow / Hero - Refined Banner Size */
+    /* Slideshow / Hero - Balanced for Mobile */
     .splash-header { 
-        height: 30vh !important; /* Thinner banner for mobile */
-        min-height: 220px !important; 
+        height: auto !important;
+        aspect-ratio: 4 / 3 !important; /* Taller ratio for mobile devices */
+        min-height: 280px !important; 
         background: #001a4d !important;
     }
     .slide {
