@@ -482,8 +482,8 @@ body {
 
 /* Splash Slideshow/Header */
 .splash-header {
-    height: 60vh; /* Reduced from 100vh for a cleaner banner look */
-    min-height: 450px; /* Ensures it doesn't get too small on laptops */
+    height: 45vh; /* Standard banner height */
+    min-height: 300px;
     position: relative;
     overflow: hidden;
     border-bottom: 4px solid #00D4FF;
@@ -545,7 +545,7 @@ body {
 
 .slide-nav {
     position: absolute;
-    bottom: 40px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -581,34 +581,6 @@ body {
     display: none;
 }
 
-/* Default Hero Content over Slides */
-.hero-content {
-    position: relative;
-    z-index: 5;
-    text-align: center;
-    color: white;
-    background: rgba(0, 0, 0, 0.25); /* More transparent for better look */
-    backdrop-filter: blur(8px);
-    padding: 60px 80px; /* More padding for premium feel */
-    border-radius: 40px;
-    border: 1px solid rgba(255,255,255,0.15);
-    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
-    max-width: 800px;
-}
-
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-    font-weight: 900;
-    text-transform: uppercase;
-    letter-spacing: -1px;
-}
-
-.hero-content p {
-    font-size: 1.4rem;
-    font-weight: 500;
-    opacity: 0.9;
-}
 
 
 /* Pricing Grid */
@@ -1150,8 +1122,8 @@ footer {
 
     /* Slideshow / Hero - Refined Banner Size */
     .splash-header { 
-        height: 45vh !important; /* Balanced size for mobile */
-        min-height: 320px !important; 
+        height: 30vh !important; /* Thinner banner for mobile */
+        min-height: 220px !important; 
         background: #001a4d !important;
     }
     .slide {
