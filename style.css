@@ -1131,15 +1131,22 @@ footer {
     .nav-links li:not(:last-child) { display: none; }
     .nav-links li { margin-left: 0; }
 
-    /* Slideshow / Hero - Proportional Banner Style */
+    /* Slideshow / Hero - Full Photo Visibility */
     .splash-header { 
-        height: 38vh; /* Banner proportion */
-        min-height: 300px; 
+        height: 35vh; 
+        min-height: 280px; 
+        background: #001a4d !important; /* Base color for gaps */
+    }
+    .slide {
+        background-size: contain !important; /* Show entire photo */
+        background-repeat: no-repeat !important;
+        background-position: center !important;
     }
     .hero-content { 
-        padding: 15px; 
-        width: 85%; 
-        border-radius: 10px;
+        padding: 12px; 
+        width: 82%; 
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.4); /* Slightly subtler overlay */
     }
     .hero-content h1 { font-size: 1.3rem !important; margin-bottom: 5px; }
     .hero-content p { font-size: 0.75rem; }
