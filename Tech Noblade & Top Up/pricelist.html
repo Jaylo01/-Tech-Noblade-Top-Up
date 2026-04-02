@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricelist - Tech Noblade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Sidebar Toggle & Menu -->
+    <input type="checkbox" id="side-menu-toggle" class="side-menu-toggle">
+    <div class="side-menu-overlay"></div>
+    <aside class="side-menu">
+        <label for="side-menu-toggle" class="close-btn" style="position: absolute; top: 20px; right: 20px; cursor: pointer; font-size: 1.5rem;">✕</label>
+        <h2 class="logo"><img src="./images/logo.jpeg" class="logo-img" alt="Logo"> Tech Noblade</h2>
+
+        <br>
+        <h3>Explore</h3>
+        <a href="home.html">Home</a>
+        <a href="products.html">Top-Up Products</a>
+        <a href="repair.html">Repair Services</a>
+        <a href="pricelist.html">Pricing List</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </aside>
+
+    <header class="navbar">
+        <div class="container">
+            <h2 class="logo"><img src="./images/logo.jpeg" class="logo-img" alt="Tech Noblade Logo"> Tech Noblade</h2>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><label for="side-menu-toggle" class="nav-toggle-btn">☰</label></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="container" style="padding: 60px 0;">
+        <h2 class="section-title">Select Pricing</h2>
+        <div class="modal-content" style="display: block; margin: 0 auto; max-width: 500px; position: static;">
+            <h3>Mobile Legends Diamonds</h3>
+            <ul class="pricing-list">
+                <li>
+                    <input type="radio" name="price" id="p1" class="price-radio">
+                    <label for="p1"><span>11 Diamonds</span> <span>₱10.00</span></label>
+                </li>
+                <li>
+                    <input type="radio" name="price" id="p2" class="price-radio">
+                    <label for="p2"><span>50 Diamonds</span> <span>₱45.00</span></label>
+                </li>
+                <li>
+                    <input type="radio" name="price" id="p3" class="price-radio">
+                    <label for="p3"><span>150 Diamonds</span> <span>₱135.00</span></label>
+                </li>
+                <li>
+                    <input type="radio" name="price" id="p4" class="price-radio">
+                    <label for="p4"><span>500 Diamonds</span> <span>₱450.00</span></label>
+                </li>
+            </ul>
+            <a href="payment.html" class="btn btn-primary btn-full" style="margin-top: 20px;">Proceed to Payment</a>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="home.html" class="logo-link">
+                        <h2 class="logo" style="color: #ffffff;"><img src="./images/logo.jpeg" class="logo-img" alt="Logo" style="height: 80px;"> Tech Noblade</h2>
+                    </a>
+                    <p style="margin-top: 15px; opacity: 0.9;">Fast & Reliable Tech Services and Game Top-Ups.</p>
+                </div>
+
+
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="products.html">Game Top-Up</a></li>
+                        <li><a href="repair.html">Tech Repair</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Tech Noblade & Top Up. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
