@@ -1,0 +1,180 @@
+/* Pricing Grid */
+.modal-content {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    border: 2px solid #0050FF;
+    box-shadow: 0 10px 30px rgba(0, 80, 255, 0.1);
+    max-width: 600px !important;
+    width: 90% !important;
+}
+
+.pricing-list li {
+    margin-bottom: 12px;
+    list-style: none;
+}
+
+.pricing-list label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    background: #f8f9fa;
+    border: 2px solid #eee;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.price-radio {
+    display: none;
+}
+
+.price-radio:checked + label {
+    border-color: #0050FF;
+    background-color: #f0f7ff;
+    color: #0050FF;
+}
+
+.payment-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.payment-method {
+    width: 100%;
+}
+
+.payment-method label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Logo first */
+    gap: 20px;
+    padding: 25px; /* More padding */
+    background: #f8f9fa;
+    border: 2px solid #eee;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 800;
+}
+
+.payment-logo {
+    height: 50px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.payment-method .price-radio:checked + label {
+    background-color: #00D4FF !important;
+    border-color: #0050FF !important;
+    color: #ffffff !important;
+}
+
+/* Payment Selection Styling */
+.method-card {
+    border: 2px solid #eee;
+    border-radius: 15px;
+    padding: 20px;
+    transition: all 0.3s ease;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.method-card:hover {
+    border-color: #0050FF;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+#gcash:checked ~ main label[for="gcash"] .method-card,
+#maya:checked ~ main label[for="maya"] .method-card,
+#otc:checked ~ main label[for="otc"] .method-card {
+    border-color: #0050FF;
+    background: #f0f7ff;
+    box-shadow: 0 5px 15px rgba(0, 80, 255, 0.1);
+}
+
+/* Payment Panels */
+.payment-details {
+    margin-top: 30px;
+    min-height: 400px;
+}
+
+.payment-panel {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1100;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.2);
+    border: 1px solid #f0f7ff;
+    animation: fadeIn 0.4s ease-out;
+    max-width: 500px;
+    width: 90%;
+}
+
+.payment-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(5px);
+    z-index: 1050;
+    display: none;
+}
+
+#gcash:checked ~ .payment-overlay,
+#maya:checked ~ .payment-overlay,
+#otc:checked ~ .payment-overlay {
+    display: block;
+}
+
+#gcash:checked ~ main #gcash-panel,
+#maya:checked ~ main #maya-panel,
+#otc:checked ~ main #otc-panel {
+    display: block;
+}
+
+.qr-container {
+    text-align: center;
+    margin-bottom: 25px;
+    overflow: hidden; /* For cropping */
+    border-radius: 15px;
+    border: 8px solid #f8fbff;
+    width: 220px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.qr-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    display: block;
+    background-color: #ffffff;
+}
+
+.payment-instructions {
+    color: #444;
+    line-height: 1.6;
+}
+
+.payment-instructions h3 {
+    color: #0050FF;
+    margin-bottom: 10px;
+}

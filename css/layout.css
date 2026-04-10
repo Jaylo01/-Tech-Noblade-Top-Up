@@ -1,0 +1,151 @@
+/* Generic Page Header (Replaces Slideshow on subpages) */
+.page-header {
+    background: linear-gradient(135deg, #0050FF 0%, #00D4FF 100%);
+    color: white;
+    padding: 80px 0;
+    text-align: center;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+/* Redesigned content sections */
+.about-section, .contact-section {
+    padding: 80px 0;
+    background: #f8faff;
+}
+
+.attractive-card {
+    background: white;
+    padding: 50px;
+    border-radius: 30px;
+    box-shadow: 0 15px 40px rgba(0, 80, 255, 0.08);
+    border: 1px solid #eef2f8;
+    margin-bottom: 40px;
+    transition: transform 0.3s ease;
+}
+
+.attractive-card:hover {
+    transform: translateY(-8px);
+}
+
+.attractive-card h2 {
+    color: #0050FF;
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+/* Footer Section */
+footer {
+    background-color: #000000; /* Black background as requested */
+    color: #ffffff;
+    padding: 80px 0 40px 0;
+    margin-top: 60px;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-col:first-child {
+    flex: 2;
+    min-width: 300px;
+}
+
+.footer-col:not(:first-child) {
+    flex: 1;
+    min-width: 150px;
+    text-align: right;
+}
+
+.footer-col:not(:first-child) ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-col h4 {
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: #00D4FF;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.2s;
+    font-weight: 500;
+}
+
+.footer-col ul li a:hover {
+    color: #00D4FF;
+}
+
+.app-badges {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app-badge {
+    height: 45px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0050FF;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    background: #00D4FF;
+    color: #ffffff;
+}
+
+.footer-bottom {
+    background-color: #0050FF;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ffffff;
+    font-weight: 800;
+    width: 100%;
+}
